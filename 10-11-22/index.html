@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10-11-22</title>
+    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="css/main.min.css">
+    <style>
+        body {
+            background-color: paleturquoise
+        }
+    </style>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="mt-5">
+    <center>
+    <h1 class="mb-4">TEMPERATURE CONVERTER</h1>
+    Celsius (°C)
+    <input type="text" id="input1" onkeyup="
+        let a = document.getElementById ('input1').value;
+        if (a != '') {
+            document.getElementById ('input2').value = sumTotal()
+        }  else {
+            document.getElementById ('input2').value = ('')
+        };
+    ">
+    <br><br>
+    Fahrenheit (°F) 
+    <input type="text" id="input2" disabled>
+    <!-- <button type="button" id="button1" onclick="alert(sumTotal ())">Click Me</button> -->
+    <br><br>
+    <button id="button2" class="btn btn-nice" onclick="
+    if (a != '') {
+        inputTwo.value = sumTotal ()
+    } else {
+        return null
+    }
+    ">Convert</button>
+    <button id="button3" class="btn btn-cool" onclick="clearInput ()">Reset</button>
+</center>
+</div>
+</body>
+</html>
