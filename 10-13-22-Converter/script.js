@@ -3,8 +3,6 @@
 const inputArea = document.getElementById ("input-area")
 const massElement= document.getElementById ("mass-element")
 
-// we declare here, so we can access in the function convertMass
-// the inputArea events listener still needs its own inputNumber = inputArea.value
 let inputNumber = inputArea.value
 const oneKilo = 2.205
 
@@ -27,6 +25,7 @@ function convertEverything () {
 }
 
 inputArea.addEventListener ("keyup", convertEverything)
+
 
 
 
